@@ -1,0 +1,13 @@
+package com.backend.forumavalburo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ForumAvalBuroApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ForumAvalBuroApplication.class, args);
+	}
+
+}
