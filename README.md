@@ -9,9 +9,9 @@
 2. Clonar el repositorio con GitHub Desktop
 3. Abrir un terminal con permisos de administrador
 4. Con comandos del terminal dirigirse al directorio donde se clonó el repositorio
-5. Una vez en el directorio del repositorio clonado, ejecutar el siguiente comando:
+5. Verificar que ningún antivirus interfiera con el proceso. (Recomendable desactivar antivirus antes de ejecutar el comando)
+6. Una vez en el directorio del repositorio clonado, ejecutar el siguiente comando:
 `mvnw.cmd spring-boot:run`
-6. Verificar que ningún antivirus interfiera con el proceso. (Recomendable desactivar antivirus antes de ejecutar el comando)
 7. Otorogar permisos de firewall a redes publics y privadas.
 
 ### ¡¡¡ Listo el backend de la aplicación debería estar ejecutandose !!!
