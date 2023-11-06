@@ -29,7 +29,6 @@ public class UserService {
             List<String> usersSaved = Files.readAllLines(Paths.get(storageFiles+"users.json"));
             usersSaved.add(jsonModel);
             Files.write(Paths.get(storageFiles+"users.json"), usersSaved);
-            System.out.println(storageFiles);
         } catch (Exception e) {
             System.out.println("Error creating file = " + e.getMessage());
         }

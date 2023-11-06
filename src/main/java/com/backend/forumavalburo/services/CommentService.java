@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.backend.forumavalburo.services;
 
 import com.backend.forumavalburo.models.CommentModel;
@@ -10,7 +7,6 @@ import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -35,7 +31,6 @@ public class CommentService {
             ArrayList<CommentModel> commentsSaved = this.getComments();
             commentsSaved = commentsUpdated;
             objectMapper.writeValue(commentsJson, commentsSaved);
-            System.out.println(storageFiles);
         } catch (Exception e) {
             System.out.println("Error creating file = " + e.getMessage());
         }
@@ -54,9 +49,7 @@ public class CommentService {
                     objectMapper.getTypeFactory()
                             .constructCollectionType(ArrayList.class, CommentModel.class));
             
-            for( CommentModel commentSaved: commentsSaved  ){
-                System.out.println("Comment="+commentSaved.getUser()+" "+commentSaved.getMessage());
-            }
+            
         } catch (Exception e) {
             System.out.println("Error creating file = " + e.getMessage());
         }
